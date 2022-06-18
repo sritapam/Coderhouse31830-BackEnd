@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span id="hola"></span>
+    <span id="chau"></span>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script>
+      const contexto = { nombre: 'Juan' };
+      const templateHola = '<h1>Hola {{nombre}}</h1>';
+      const templateAdios = '<h1>Chau {{nombre}}</h1>';
+      const generarHola = Handlebars.compile(templateHola);
+      const generarAdios = Handlebars.compile(templateAdios);
+      const htmlHola = generarHola(contexto); // genera el html
+      const htmlAdios = generarAdios(contexto); // genera el html
+      
+     
+      document.getElementById("hola").innerHTML = htmlHola;
+      document.getElementById("chau").innerHTML = htmlAdios;
+      
+    </script>
+  </body>
+</html>

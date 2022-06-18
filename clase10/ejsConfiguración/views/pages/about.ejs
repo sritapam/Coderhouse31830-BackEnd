@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+  <title>Document</title>
+</head>
+<body class="container">
+  <header>
+    <%- include('../partials/header', {variant:'compact'}); %> <!-- variante compact que voy a usar en el parcial header-->
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="jumbotron">
+          <h1>Estamos usando EJS</h1>
+          <p>Bienvenidos a este mundo</p>
+        </div>
+      </div>
+    <div class="col-sm-4">
+      <div class="well">
+          <h3>Hola estoy de lado!</h3>
+      </div>
+    </div>
+
+  </div>
+  </main>
+  
+  <footer>
+    <%- include('../partials/footer'); %>
+  </footer>
+  
+</body>
+</html>

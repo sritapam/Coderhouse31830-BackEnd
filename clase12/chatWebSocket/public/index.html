@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Chat con SocketIO</title>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+
+  <body>
+    <h1>Cliente Websockets</h1>
+    <form onsubmit="return addMessage(this)">
+      <input type="text" id="username" placeholder="Tu Nombre" />
+      <input type="text" id="texto" placeholder="Cuéntanos algo..." />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <div id="mensajes"></div>
+    <script src="/main.js"></script>
+  </body>
+</html>

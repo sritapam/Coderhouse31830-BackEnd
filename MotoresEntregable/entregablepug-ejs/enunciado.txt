@@ -1,0 +1,4 @@
+﻿Realizar las siguientes adaptaciones sobre el entregable de la unidad anterior:
+
+1) Manteniendo la misma funcionalidad reemplazar el motor de plantillas handlebars por pug.
+2) Manteniendo la misma funcionalidad reemplazar el motor de plantillas handlebars por ejs.
